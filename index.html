@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personel Tanima Formu</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+      <header>
+        <img src="./images/DeveloperAvatar.png" alt="" width="100" />
+        PERSONEL TANIMA FORMU
+      </header>
+      <br />
+      <section>
+        <form action="./result.html">
+          <div>
+            <label for="ad">Adınız:</label>
+            <input
+              type="text"
+              id="ad"
+              name="Ad"
+              required
+              placeholder="Adınız"
+            />
+          </div>
+
+          <div>
+            <label for="soyad">Soyad</label>
+            <input type="text" id="soyad" name="Soyad" />
+          </div>
+
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="E-mail" id="email" />
+          </div>
+
+          <div>
+            <label for="sifre">Şifre</label>
+            <input type="password" name="Sifre" id="sifre" />
+          </div>
+
+          <div>
+            <label for="tel">Telefon</label>
+            <input
+              type="tel"
+              name="Telefon"
+              id="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              placeholder="xxx-xxx-xx-xx"
+            />
+          </div>
+
+          <div>
+            <label for="yas">Yaş</label>
+            <input type="number" name="Yas" id="yas" min="16" max="50" />
+          </div>
+          <div>
+            <label for="dtarih">Doğum Tarihi:</label>
+            <input
+              type="date"
+              name="Dogum_tarihi"
+              id="dtarih"
+              min="1974-01-02"
+              max="2008-01-01"
+            />
+          </div>
+
+          <div>
+            <label for="Cinsiyet">Cinsiyet:</label>
+            <input type="radio" name="cinsiyet" id="kadın" value="Kadın" />
+            <label for="kadın">Kadın</label>
+            <input type="radio" name="cinsiyet" id="erkek" value="Erkek" />
+            <label for="erkek">Erkek</label>
+          </div>
+
+          <div>
+            <label for="gunler">Müsait Olduğunuz Günler</label>
+            <input
+              type="checkbox"
+              name="Gunler"
+              id="cumartesi"
+              value="cumartesi"
+            />
+            <label for="cumartesi">Cumartesi</label>
+            <input type="checkbox" name="Gunler" id="pazar" value="pazar" />
+            <label for="pazar">Pazar</label>
+          </div>
+
+          <div>
+            <label for="renk">Sevdiğiniz Renk:</label>
+            <input type="color" name="Renk" id="renk" />
+          </div>
+          <div>
+            <label for="foto">Fotograf Yükleyin:</label>
+            <input type="file" name="Fotograf" id="foto" />
+          </div>
+          <div>
+            <label for="maas">Maaş:</label>
+            <input type="range" name="Maaş" id="" min="10000" max="100000" />
+          </div>
+
+         
+          <div>
+            <label for="tatli">Sevdiğiniz Tatlılar</label>
+            <select name="Sevilen_Tatli" id="tatli" required>
+              <option value="" selected>---Select-----</option>
+              <optgroup label="Sütlü Tatlılar">
+                <option value="Tiramisu">Tiramisu</option>
+                <option value="san">San Sebastian</option>
+                <option value="Tirileçe">Tirileçe</option>
+              </optgroup>
+              <optgroup label="Şerbetli Tatlılar">
+                <option value="baklava">baklava</option>
+                <option value="künefe">künefe</option>
+                <option value="kemalpaşa">Kemalpaşa</option>
+                <option value="kadayıf dolması">kadayıf dolması</option>
+              </optgroup>
+            </select>
+          </div>
+          <div>
+            <label for="ulke">Gitmek İstediğiniz Ülkeler</label>
+            <input type="text" id="ulke" list="gidilecekUlke" name="ulke" />
+            <datalist id="gidilecekUlke">
+              <option value="Almanya"></option>
+              <option value="Amerika"></option>
+              <option value="Fransa"></option>
+            </datalist>
+          </div>
+          <div>
+            <label for="yorum">Yorum</label>
+            <textarea
+              style="resize: none"
+              name="yorum"
+              id="yorum"
+              cols="20"
+              rows="5"
+            ></textarea>
+          </div>
+          <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <label for="">Baba Adı</label>
+            <input type="text" name="Baba Adı" />
+            <label for="">Anne Adı</label>
+            <input type="text" name="Anne Adı" />
+          </fieldset>
+          <br />
+
+          <input type="submit" value="KAYDET" />
+          <input type="reset" value="TEMİZLE" />
+        </form>
+      </section>
+      <br />
+
+      <a href="https://clarusway.com/" target="_blank"
+        >Daha fazla bilgi için sayfamızı ziyaret edin</a
+      >
+    </div>
+  </body>
+</html>
